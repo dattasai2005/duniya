@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            width: 80vw;
+            height: 80vh;
+        }
+        .container div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <a href="page1.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_XhxWQBjO9EjOA5oH2pgygpMNhotMoQmxA&s/400" alt="Challenge 1">
+            </a>
+        </div>
+        <div>
+            <a href="page2.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_XhxWQBjO9EjOA5oH2pgygpMNhotMoQmxA&s/400" alt="Challenge 2">
+            </a>
+        </div>
+        <div>
+            <a href="page3.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLMTRHNSlbfTf9Xxz7D-H7UA8JIhLO5LWMA&s/400" alt="Challenge 3">
+            </a>
+        </div>
+        <div>
+            <a href="page4.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3lHn8lUuP1_H8GqYzjP048NZmOnx3YzA45w&s/400" alt="Challenge 4">
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

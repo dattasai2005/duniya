@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Challenges - Student Duniya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.33.0/min/vs/loader.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #question-container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        #editor {
+            width: 100%;
+            height: 500px;
+            margin: 20px 0;
+        }
+        #output {
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            white-space: pre-wrap;
+            overflow: auto;
+        }
+        button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="question-container">
+        <h1 id="problem-statement">Problem Statement</h1>
+        <pre id="problem-details"></pre>
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+    </div>
+    <div id="editor"></div>
+    <button onclick="runCode()">Run Code</button>
+    <pre id="output"></pre>
+
+    <script>
+        // Simulate MongoDB data as a local JavaScript object (from JSON)
+        const questions = [
+            {
+                "id": 1,
+                "language": "python",
+                "difficulty": "beginner",
+                "statement": "Write a program to print 'Hello, Student Duniya!'",
+                "explanation": "This program demonstrates basic printing in Python.",
+                "expected_output": "Hello, Student Duniya!"
+            },
+            {
+                "id": 2,
+                "language": "python",
+                "difficulty": "beginner",
+                "statement": "Write a program to swap two numbers.",
+                "explanation": "This program swaps two numbers and prints the result.",
+                "expected_output": "After swapping: a = 5, b = 10"
+            },
+            {
+                "id": 3,
+                "language": "python",
+                "difficulty": "beginner",
+                "statement": "Write a program to find the factorial of a number.",
+                "explanation": "This program calculates the factorial of a number.",
+                "expected_output": "The factorial of 5 is 120."
+            }
+            // Add other questions here...
+        ];
+
+        let currentId = 1; // Starting ID for questions
+
+        // Fetch question from local JSON data
+        function fetchQuestion(id) {
+            const question = questions.find(q => q.id === id); // Find question by id
+            if (question) {
+                document.getElementById('problem-statement').textContent = question.statement;
+                document.getElementById('problem-details').textContent = `${question.explanation}\n\nExpected Output: ${question.expected_output}`;
+            } else {
+                document.getElementById('problem-statement').textContent = 'No question found';
+                document.getElementById('problem-details').textContent = '';
+            }
+        }
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            if (currentId > 1) {
+                currentId--;
+                fetchQuestion(currentId);
+            }
+        });
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            if (currentId < questions.length) {
+                currentId++;
+                fetchQuestion(currentId);
+            }
+        });
+
+        require.config({ paths: { vs: 'https://cdn.jsdelivr.net/npm/monaco-editor@0.33.0/min/vs' } });
+        require(['vs/editor/editor.main'], function() {
+            window.editor = monaco.editor.create(document.getElementById('editor'), {
+                value: `print("Hello, World!")`,
+                language: 'python',
+                theme: 'vs-dark'
+            });
+        });
+
+        async function runCode() {
+            const code = window.editor.getValue(); // Get code from Monaco Editor
+            const payload = {
+                language: 'python',
+                version: '3.8.0',
+                files: [{ content: code }],
+                stdin: ""
+            };
+
+            try {
+                const response = await fetch('http://localhost:2000/api/v2/execute', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+                document.getElementById('output').textContent = result.run.stdout;
+                Prism.highlightElement(document.getElementById('output')); // Syntax highlighting
+            } catch (error) {
+                console.error('Error executing code:', error);
+            }
+        }
+
+        fetchQuestion(currentId); // Load the first question on page load
+    </script>
+</body>
+</html>

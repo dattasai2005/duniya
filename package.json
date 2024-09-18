@@ -1,0 +1,26 @@
+{
+  "name": "challenge-generator",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "axios-retry": "^4.5.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.5.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.3",
+    "mysql2": "^3.11.3",
+    "openai": "^4.61.1",
+    "pg": "^8.13.0",
+    "socket.io": "^4.7.5"
+  },
+  "description": ""
+}

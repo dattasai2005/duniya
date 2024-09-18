@@ -1,0 +1,393 @@
+[
+ 
+  {
+    "id": "1",
+    "language": "python",
+    "difficulty": "beginner",
+    "statement": "Write a program to print 'Hello, Student Duniya!'",
+    "explanation": "This program demonstrates basic printing in Python.",
+    "expected_output": "Hello, Student Duniya!"
+  },
+  {
+    "id": "2",
+    "language": "python",
+    "difficulty": "beginner",
+    "statement": "Write a program to swap two numbers.",
+    "explanation": "This program swaps two numbers and prints the result.",
+    "expected_output": "After swapping: a = 5, b = 10"
+  },
+  {
+    "id": "3",
+    "language": "python",
+    "difficulty": "beginner",
+    "statement": "Write a program to find the factorial of a number.",
+    "explanation": "This program calculates the factorial of a number.",
+    "expected_output": "The factorial of 5 is 120."
+  },
+  {
+    "id": "4",
+    "language": "python",
+    "difficulty": "beginner",
+    "statement": "Write a program to check if a number is even or odd.",
+    "explanation": "This program checks if a number is even or odd.",
+    "expected_output": "The number 4 is even."
+  },
+  {
+    "id": "5",
+    "language": "python",
+    "difficulty": "intermediate",
+    "statement": "Write a program to sort a list of integers.",
+    "explanation": "This program sorts a list of integers in ascending order.",
+    "expected_output": "Sorted list: [1, 2, 3, 4, 5]"
+  },
+  {
+    "id": "6",
+    "language": "python",
+    "difficulty": "intermediate",
+    "statement": "Write a program to find the GCD of two numbers.",
+    "explanation": "This program finds the greatest common divisor (GCD) of two numbers.",
+    "expected_output": "The GCD of 48 and 18 is 6."
+  },
+  {
+    "id": "7",
+    "language": "python",
+    "difficulty": "intermediate",
+    "statement": "Write a program to reverse a string.",
+    "explanation": "This program reverses the given string.",
+    "expected_output": "The reverse of 'Student Duniya' is 'ayinduD tnedutS'."
+  },
+  {
+    "id": "8",
+    "language": "python",
+    "difficulty": "intermediate",
+    "statement": "Write a program to implement a basic calculator.",
+    "explanation": "This program implements a basic calculator to perform addition, subtraction, multiplication, and division.",
+    "expected_output": "Result of addition: 15"
+  },
+  {
+    "id": "9",
+    "language": "python",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a basic file I/O operations: read and write.",
+    "explanation": "This program demonstrates file handling in Python for reading and writing data.",
+    "expected_output": "Data successfully written to file."
+  },
+  {
+    "id": "10",
+    "language": "python",
+    "difficulty": "advanced",
+    "statement": "Write a program to create a simple text-based game.",
+    "explanation": "This program creates a simple text-based game with user interaction.",
+    "expected_output": "Congratulations, you won the game!"
+  },
+  {
+    "id": "11",
+    "language": "python",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a basic queue using a list.",
+    "explanation": "This program demonstrates queue operations like enqueue and dequeue using a list.",
+    "expected_output": "Queue after enqueue operations: [10, 20, 30]"
+  },
+  {
+    "id": "12",
+    "language": "python",
+    "difficulty": "advanced",
+    "statement": "Write a program to find the longest common prefix in a list of strings.",
+    "explanation": "This program finds the longest common prefix among a list of strings.",
+    "expected_output": "The longest common prefix is 'pre'."
+  },
+
+ 
+  {
+    "id": "13",
+    "language": "c",
+    "difficulty": "beginner",
+    "statement": "Write a program to print 'Hello, Student Duniya!'",
+    "explanation": "This program demonstrates basic printing in C.",
+    "expected_output": "Hello, Student Duniya!"
+  },
+  {
+    "id": "14",
+    "language": "c",
+    "difficulty": "beginner",
+    "statement": "Write a program to find the sum of two numbers.",
+    "explanation": "This program adds two numbers and prints the result.",
+    "expected_output": "The sum of 5 and 10 is 15."
+  },
+  {
+    "id": "15",
+    "language": "c",
+    "difficulty": "beginner",
+    "statement": "Write a program to check if a number is even or odd.",
+    "explanation": "This program checks if a number is even or odd.",
+    "expected_output": "The number 4 is even."
+  },
+  {
+    "id": "16",
+    "language": "c",
+    "difficulty": "beginner",
+    "statement": "Write a program to find the largest of three numbers.",
+    "explanation": "This program finds the largest of three numbers using conditional statements.",
+    "expected_output": "The largest of 4, 7, and 2 is 7."
+  },
+  {
+    "id": "17",
+    "language": "c",
+    "difficulty": "intermediate",
+    "statement": "Write a program to implement a basic stack using arrays.",
+    "explanation": "This program demonstrates stack operations like push and pop using arrays.",
+    "expected_output": "Stack after pushing 10: [10]"
+  },
+  {
+    "id": "18",
+    "language": "c",
+    "difficulty": "intermediate",
+    "statement": "Write a program to sort an array of integers in descending order.",
+    "explanation": "This program sorts an array of integers in descending order.",
+    "expected_output": "Sorted array in descending order: [9, 7, 5, 2, 1]"
+  },
+  {
+    "id": "19",
+    "language": "c",
+    "difficulty": "intermediate",
+    "statement": "Write a program to find the GCD of two numbers.",
+    "explanation": "This program finds the greatest common divisor (GCD) of two numbers.",
+    "expected_output": "The GCD of 48 and 18 is 6."
+  },
+  {
+    "id": "20",
+    "language": "c",
+    "difficulty": "intermediate",
+    "statement": "Write a program to implement a basic queue using linked list.",
+    "explanation": "This program demonstrates queue operations using a linked list.",
+    "expected_output": "Queue after enqueue operations: [10, 20, 30]"
+  },
+  {
+    "id": "21",
+    "language": "c",
+    "difficulty": "advanced",
+    "statement": "Write a program to create a simple text-based game.",
+    "explanation": "This program creates a simple text-based game with user interaction.",
+    "expected_output": "Congratulations, you won the game!"
+  },
+  {
+    "id": "22",
+    "language": "c",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a binary search algorithm.",
+    "explanation": "This program performs binary search on a sorted array.",
+    "expected_output": "Element 15 found at index 4."
+  },
+  {
+    "id": "23",
+    "language": "c",
+    "difficulty": "advanced",
+    "statement": "Write a program to sort an array using quicksort algorithm.",
+    "explanation": "This program sorts an array using the quicksort algorithm.",
+    "expected_output": "Sorted array: [1, 2, 3, 4, 5]"
+  },
+  {
+    "id": "24",
+    "language": "c",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a basic file I/O operations: read and write.",
+    "explanation": "This program demonstrates file handling in C for reading and writing data.",
+    "expected_output": "Data successfully written to file."
+  },
+  {
+    "id": "25",
+    "language": "c",
+    "difficulty": "advanced",
+    "statement": "Write a program to create a simple text-based game.",
+    "explanation": "This program creates a simple text-based game with user interaction.",
+    "expected_output": "Congratulations, you won the game!"
+  },
+
+  
+  {
+    "id": "26",
+    "language": "java",
+    "difficulty": "beginner",
+    "statement": "Write a program to print 'Hello, Student Duniya!'",
+    "explanation": "This program demonstrates basic printing in Java.",
+    "expected_output": "Hello, Student Duniya!"
+  },
+  {
+    "id": "27",
+    "language": "java",
+    "difficulty": "beginner",
+    "statement": "Write a program to find the sum of two numbers.",
+    "explanation": "This program adds two numbers and prints the result.",
+    "expected_output": "The sum of 5 and 10 is 15."
+  },
+  {
+    "id": "28",
+    "language": "java",
+    "difficulty": "beginner",
+    "statement": "Write a program to check if a number is even or odd.",
+    "explanation": "This program checks if a number is even or odd.",
+    "expected_output": "The number 4 is even."
+  },
+  {
+    "id": "29",
+    "language": "java",
+    "difficulty": "beginner",
+    "statement": "Write a program to find the largest of three numbers.",
+    "explanation": "This program finds the largest of three numbers using conditional statements.",
+    "expected_output": "The largest of 4, 7, and 2 is 7."
+  },
+  {
+    "id": "30",
+    "language": "java",
+    "difficulty": "intermediate",
+    "statement": "Write a program to implement a basic stack using arrays.",
+    "explanation": "This program demonstrates stack operations like push and pop using arrays.",
+    "expected_output": "Stack after pushing 10: [10]"
+  },
+  {
+    "id": "31",
+    "language": "java",
+    "difficulty": "intermediate",
+    "statement": "Write a program to sort an array of integers in ascending order.",
+    "explanation": "This program sorts an array of integers in ascending order.",
+    "expected_output": "Sorted array: [1, 2, 3, 4, 5]"
+  },
+  {
+    "id": "32",
+    "language": "java",
+    "difficulty": "intermediate",
+    "statement": "Write a program to reverse a string.",
+    "explanation": "This program reverses the given string.",
+    "expected_output": "The reverse of 'Student Duniya' is 'ayinduD tnedutS'."
+  },
+  {
+    "id": "33",
+    "language": "java",
+    "difficulty": "intermediate",
+    "statement": "Write a program to implement a basic calculator.",
+    "explanation": "This program implements a basic calculator to perform addition, subtraction, multiplication, and division.",
+    "expected_output": "Result of addition: 15"
+  },
+  {
+    "id": "34",
+    "language": "java",
+    "difficulty": "advanced",
+    "statement": "Write a program to create a simple text-based game.",
+    "explanation": "This program creates a simple text-based game with user interaction.",
+    "expected_output": "Congratulations, you won the game!"
+  },
+  {
+    "id": "35",
+    "language": "java",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a binary search algorithm.",
+    "explanation": "This program performs binary search on a sorted array.",
+    "expected_output": "Element 15 found at index 4."
+  },
+  {
+    "id": "36",
+    "language": "java",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a basic linked list with operations insert and delete.",
+    "explanation": "This program demonstrates basic linked list operations including insertion and deletion.",
+    "expected_output": "Linked list after insertions: [10, 20, 30]"
+  },
+  {
+    "id": "37",
+    "language": "java",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a basic file I/O operations: read and write.",
+    "explanation": "This program demonstrates file handling in Java for reading and writing data.",
+    "expected_output": "Data successfully written to file."
+  },
+
+ 
+  {
+    "id": "38",
+    "language": "cpp",
+    "difficulty": "beginner",
+    "statement": "Write a program to print 'Hello, Student Duniya!'",
+    "explanation": "This program demonstrates basic printing in C++.",
+    "expected_output": "Hello, Student Duniya!"
+  },
+  {
+    "id": "39",
+    "language": "cpp",
+    "difficulty": "beginner",
+    "statement": "Write a program to swap two numbers.",
+    "explanation": "This program swaps two numbers and prints the result.",
+    "expected_output": "After swapping: a = 5, b = 10"
+  },
+  {
+    "id": "40",
+    "language": "cpp",
+    "difficulty": "beginner",
+    "statement": "Write a program to check if a number is prime.",
+    "explanation": "This program checks if a given number is a prime number.",
+    "expected_output": "The number 7 is prime."
+  },
+  {
+    "id": "41",
+    "language": "cpp",
+    "difficulty": "beginner",
+    "statement": "Write a program to find the largest of three numbers.",
+    "explanation": "This program finds the largest of three numbers using conditional statements.",
+    "expected_output": "The largest of 4, 7, and 2 is 7."
+  },
+  {
+    "id": "42",
+    "language": "cpp",
+    "difficulty": "intermediate",
+    "statement": "Write a program to find the factorial of a number using recursion.",
+    "explanation": "This program calculates the factorial of a number using recursion.",
+    "expected_output": "The factorial of 5 is 120."
+  },
+  {
+    "id": "43",
+    "language": "cpp",
+    "difficulty": "intermediate",
+    "statement": "Write a program to implement a basic stack using arrays.",
+    "explanation": "This program demonstrates stack operations like push and pop using arrays.",
+    "expected_output": "Stack after pushing 10: [10]"
+  },
+  {
+    "id": "44",
+    "language": "cpp",
+    "difficulty": "intermediate",
+    "statement": "Write a program to sort an array of integers in ascending order.",
+    "explanation": "This program sorts an array of integers in ascending order.",
+    "expected_output": "Sorted array: [1, 2, 3, 4, 5]"
+  },
+  {
+    "id": "45",
+    "language": "cpp",
+    "difficulty": "intermediate",
+    "statement": "Write a program to reverse a string.",
+    "explanation": "This program reverses the given string.",
+    "expected_output": "The reverse of 'Student Duniya' is 'ayinduD tnedutS'."
+  },
+  {
+    "id": "46",
+    "language": "cpp",
+    "difficulty": "intermediate",
+    "statement": "Write a program to find the GCD of two numbers.",
+    "explanation": "This program finds the greatest common divisor (GCD) of two numbers.",
+    "expected_output": "The GCD of 48 and 18 is 6."
+  },
+  {
+    "id": "47",
+    "language": "cpp",
+    "difficulty": "advanced",
+    "statement": "Write a program to implement a basic linked list with operations insert and delete.",
+    "explanation": "This program demonstrates basic linked list operations including insertion and deletion.",
+    "expected_output": "Linked list after insertions: [10, 20, 30]"
+  },
+  {
+    "id": "48",
+    "language": "cpp",
+    "difficulty": "advanced",
+    "statement": "Write a program to create a simple text-based game.",
+    "explanation": "This program creates a simple text-based game with user interaction.",
+    "expected_output": "Congratulations, you won the game!"
+  }
+]
